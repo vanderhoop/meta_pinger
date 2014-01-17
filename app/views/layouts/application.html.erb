@@ -6,8 +6,8 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
+  <%= flash[:notice] %>
+  <%= yield %>
 
   <%= javascript_include_tag "application" %>
 </body>

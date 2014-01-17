@@ -38,7 +38,6 @@ gem 'jquery-rails'
 # gem 'debugger'
 
 gem "terminal-notifier-guard", :group => [:test, :development]
-gem "devise"
 gem "rspec-rails", :group => [:test, :development]
 gem "guard-rspec", :group => [:test, :development]
 gem "capybara", :group => [:test, :development]
@@ -57,3 +56,5 @@ gem "awesome_print", :group => [:test, :development]
 gem "better_errors", :group => [:development]
 gem "simplecov", :require => false, :group => :test
 gem "haml-rails"
+gem "devise"
+gem "httparty"

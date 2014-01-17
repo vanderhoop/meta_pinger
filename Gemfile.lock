@@ -99,6 +99,9 @@ GEM
       haml (>= 3.1, < 4.1)
       railties (>= 3.1, < 4.1)
     hike (1.2.3)
+    httparty (0.11.0)
+      multi_json (~> 1.0)
+      multi_xml (>= 0.5.2)
     i18n (0.6.9)
     jasmine (2.0.0)
       jasmine-core (~> 2.0.0)
@@ -129,6 +132,7 @@ GEM
     mime-types (1.25.1)
     mini_portile (0.5.2)
     multi_json (1.8.4)
+    multi_xml (0.5.5)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
     orm_adapter (0.5.0)
@@ -255,6 +259,7 @@ DEPENDENCIES
   devise
   guard-rspec
   haml-rails
+  httparty
   jasmine
   jquery-rails
   launchy
