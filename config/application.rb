@@ -42,17 +42,18 @@ module MetaPinger
     config.encoding = "utf-8"
 
     config.after_initialize do
-      def ping_apps
-        binding.pry
-        App.all.each do |app|
-          url = app.url
-          response = HTTParty.get(url)
-        end
-          sleep(10.seconds)
-          ping_apps
-      end
 
-      ping_apps
+      # def ping_apps
+      #   binding.pry
+      #   App.all.each do |app|
+      #     url = app.url
+      #     response = HTTParty.get(url)
+      #   end
+      #     sleep(10.seconds)
+      #     ping_apps
+      # end
+
+      # ping_apps
     end
 
     # Configure sensitive parameters which will be filtered from the log file.
