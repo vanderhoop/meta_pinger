@@ -1,0 +1,12 @@
+%h1 Welcome to MetaPinger
+
+= form_for @app do |f|
+  = f.label       :url
+  = f.text_field  :url
+  = f.label       :project_name
+  = f.text_field  :project_name
+  = f.submit
+
+/ %form
+/   %input{ :type => "text", :placeholder => "ex: lit-bayou.heroku-app"}
+/   %input{ :type => "submit", :value => "Submit", :method => "get", :action => ""}
