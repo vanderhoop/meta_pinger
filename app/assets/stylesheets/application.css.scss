@@ -1,0 +1,58 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+
+/* SCSS variables begin with a $, just like jQuery */
+$dev-copy: red;
+$dev-background: blue;
+
+ ::selection {
+    background: $dev-copy;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+}
+body {
+    background-color: $dev-copy;
+    color: #88ff00;
+    font-family: Inconsolata,monospace;
+    font-size: 12px;
+}
+
+/* You can nest elements in SCSS, so you don't have to needlessly */
+/* repeat yourself! */
+header {
+  border-bottom: 1px solid black;
+  h2 {
+    color: red;
+  }
+}
+
+#terminal{
+    margin-left:auto;
+    margin-right:auto;
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.4);
+    width:400px;
+    font: inherit;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: inherit;
+}
+
+A,.highlight{
+  color: red;
+}
