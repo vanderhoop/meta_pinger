@@ -1,28 +1,11 @@
-%div#terminal
-%span.instant
-  ===================== BOOTING UP =====================
+%div#main-container
+  %div#content-wrapper
+    %h1 Welcome to MetaPinger
+    %p Type in your Heroku app's URL, press enter, and appear awesome in front of employers
 
-  Loading...
-  [Ok].
-%span.clear
-  Howdy!
-  %br
-
-
-%span.clear
-  My Name is
-  %span.highlight
-    Benedikt Wolters
-  I'm a computer science student from
-  %a{ :href => "#" }
-    Aachen
-
-%h1 Welcome to MetaPinger
-%p Type in your Heroku app's URL, press enter, and appear awesome in front of employers
-
-= form_for @app do |f|
-  = f.label       :url
-  = f.text_field  :url, :placeholder => "ex: lit-bayou-2858.herokuapp.com"
-  = f.label       :project_name
-  = f.text_field  :project_name
-  = f.submit
+    = form_for @app do |f|
+      = f.label       :url
+      = f.text_field  :url, :placeholder => "ex: lit-bayou-2858.herokuapp.com"
+      = f.label       :project_name
+      = f.text_field  :project_name
+      = f.submit

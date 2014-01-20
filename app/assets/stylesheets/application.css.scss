@@ -14,19 +14,38 @@
 
 
 /* SCSS variables begin with a $, just like jQuery */
+/* the convention in SCSS variable-naming is to use dashes between words */
 $dev-copy: red;
-$dev-background: blue;
+$dev-background: black;
 
  ::selection {
     background: $dev-copy;
 }
+
 html, body {
     height: 100%;
     margin: 0;
     width: 100%;
+    display:table;
+    vertical-align: center;
+    background-color: $dev-background;
 }
+
+#main-container {
+  height: 100%;
+  width:100%;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+#content-wrapper {
+  height: 100%;
+  vertical-align: middle;
+  display:table-cell;
+}
+
 body {
-    background-color: $dev-copy;
+    background-color: $dev-background;
     color: #88ff00;
     font-family: Inconsolata,monospace;
     font-size: 12px;
