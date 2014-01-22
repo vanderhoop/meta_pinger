@@ -15,63 +15,46 @@
 
 /* SCSS variables begin with a $, just like jQuery */
 /* the convention in SCSS variable-naming is to use dashes between words */
-$dev-copy: red;
-$dev-background: black;
+$copy: #88ff00;
+$background: black;
 
  ::selection {
-    background: $dev-copy;
+    background: $copy;
 }
 
 html, body {
     height: 100%;
     margin: 0;
     width: 100%;
-    display:table;
-    vertical-align: center;
-    background-color: $dev-background;
+    background-color: $background;
+}
+
+body {
+    background-color: $background;
+    color: $copy;
+    font-family: monospace;
+    font-size: 12px;
 }
 
 #main-container {
   height: 100%;
   width:100%;
-  vertical-align: middle;
-  display: table-cell;
 }
 
 #content-wrapper {
   height: 100%;
-  vertical-align: middle;
-  display:table-cell;
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  margin-top:16%
 }
 
-body {
-    background-color: $dev-background;
-    color: #88ff00;
-    font-family: Inconsolata,monospace;
-    font-size: 12px;
-}
 
 /* You can nest elements in SCSS, so you don't have to needlessly */
 /* repeat yourself! */
 header {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid $copy;
   h2 {
-    color: red;
+    color: $copy;
   }
-}
-
-#terminal{
-    margin-left:auto;
-    margin-right:auto;
-    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.4);
-    width:400px;
-    font: inherit;
-    border: none;
-    background-color: transparent;
-    outline: none;
-    color: inherit;
-}
-
-A,.highlight{
-  color: red;
 }

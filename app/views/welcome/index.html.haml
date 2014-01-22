@@ -4,8 +4,6 @@
     %p Type in your Heroku app's URL, press enter, and appear awesome in front of employers
 
     = form_for @app do |f|
-      = f.label       :url
+      = f.label       :url, "Project URL: "
       = f.text_field  :url, :placeholder => "ex: lit-bayou-2858.herokuapp.com"
-      = f.label       :project_name
-      = f.text_field  :project_name
-      = f.submit
+      = f.submit "Look Awesome"
