@@ -36,6 +36,14 @@ body {
     font-size: 12px;
 }
 
+h1 {
+  font-size: 3.5em;
+}
+
+p , label{
+  font-size: 1.4em;
+}
+
 #main-container {
   height: 100%;
   width:100%;
@@ -49,11 +57,40 @@ body {
   margin-top:16%
 }
 
+///////////////////////////
+// Text Input
+///////////////////////////
+input[type=text] {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #DDDDDD;
+  line-height: 2.2em;
+  width: 35%;
+}
+
+input[type=text]:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(139, 255, 0, 1);
+}
+
+input[type="submit"] {
+  padding: 0.85em 0.3em;
+  background-color: $copy;
+  border: 0;
+  font-family:monospace;
+}
+
 
 /* You can nest elements in SCSS, so you don't have to needlessly */
 /* repeat yourself! */
 header {
-  border-bottom: 1px solid $copy;
   h2 {
     color: $copy;
   }
