@@ -18,10 +18,6 @@
 $copy: #88ff00;
 $background: black;
 
- ::selection {
-    background: $copy;
-}
-
 html, body {
     height: 100%;
     margin: 0;
@@ -58,7 +54,7 @@ p , label{
 }
 
 ///////////////////////////
-// Text Input
+// Text Field
 ///////////////////////////
 input[type=text] {
   -webkit-transition: all 0.30s ease-in-out;
@@ -71,6 +67,7 @@ input[type=text] {
   border: 1px solid #DDDDDD;
   line-height: 2.2em;
   width: 35%;
+  transition: width .3s ease-in-out;
 }
 
 input[type=text]:focus {
@@ -80,11 +77,19 @@ input[type=text]:focus {
   border: 1px solid rgba(139, 255, 0, 1);
 }
 
+input[type=text].activated {
+  width: 46%;
+}
+
+///////////////////////////
+// Submit
+///////////////////////////
 input[type="submit"] {
   padding: 0.85em 0.3em;
   background-color: $copy;
   border: 0;
   font-family:monospace;
+  cursor:pointer;
 }
 
 

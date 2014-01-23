@@ -2,8 +2,8 @@
   %div#content-wrapper
     %h1 Welcome to MetaPinger
     %p Type in your Heroku app's URL, press enter, and appear awesome in front of employers
-
-    = form_for @app do |f|
-      = f.label       :url, "Project URL: "
-      = f.text_field  :url, :placeholder => "ex: lit-bayou-2858.herokuapp.com"
-      = f.submit "Look Awesome"
+    %div.form-wrapper
+      = form_for @app do |f|
+        = f.label       :url, "Project URL: "
+        = f.text_field  :url, :placeholder => "ex: lit-bayou-2858.herokuapp.com"
+        = f.submit "Look Awesome"
