@@ -5,7 +5,7 @@ class AppsController < ApplicationController
     submitted_url = submitted_url[0..-2] if submitted_url.last == "/"
     response = HTTParty.get("http://" + submitted_url)
     error = response.include?("No such app") ? "Heroku says there's no app at this location. Maybe check for typos." : "No error here"
-    binding.pry
+    # binding.pry
 
 
 
