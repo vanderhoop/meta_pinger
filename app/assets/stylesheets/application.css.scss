@@ -91,6 +91,8 @@ input[type="submit"] {
   font-family:monospace;
   cursor:pointer;
   transition: background-color .2s ease-in-out;
+  top: 0.5px;
+  position: relative;
 }
 
 input[type="submit"]:hover {
