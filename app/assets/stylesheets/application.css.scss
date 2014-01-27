@@ -66,7 +66,7 @@ input[type=text] {
   margin: 5px 1px 3px 0px;
   border: 1px solid #DDDDDD;
   line-height: 2.2em;
-  width: 35%;
+  width: 30%;
   transition: width .3s ease-in-out;
 }
 
@@ -78,14 +78,14 @@ input[type=text]:focus {
 }
 
 input[type=text].activated {
-  width: 46%;
+  width: 36%;
 }
 
 ///////////////////////////
 // Submit
 ///////////////////////////
 input[type="submit"] {
-  padding: 0.85em 0.3em;
+  padding: 0.85em 1.5em;
   background-color: $copy;
   border: 0;
   font-family:monospace;
