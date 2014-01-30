@@ -7,9 +7,9 @@
 </head>
 <body>
   <header>
+    <p><%= flash[:notice] %><%= flash[:error] %></p>
+
   </header>
-  <%= flash[:notice] %>
-  <%= flash[:error] %>
   <%= yield %>
 
   <%= javascript_include_tag "application" %>

@@ -6,10 +6,8 @@ class AppsController < ApplicationController
     response = HTTParty.get("http://" + submitted_url)
     error = response.include?("No such app") ? "Heroku says there's no app at this location. Maybe check for typos." : "No error here"
 
-
-
     # If the supplied URL has a forward slash appended,
-    # I want to chop it off
+    # I chop it off
     ending_string = params["app"]["url"].slice(-13,13)
     if params["app"]["url"].slice(-13,13) == "herokuapp.com"
       redirect_to '/' if App.create(params["app"])
