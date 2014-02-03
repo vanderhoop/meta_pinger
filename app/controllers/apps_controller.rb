@@ -10,8 +10,7 @@ class AppsController < ApplicationController
     # I chop it off
     ending_string = params["app"]["url"].slice(-13,13)
     if params["app"]["url"].slice(-13,13) == "herokuapp.com"
-      redirect_to '/' if App.create(params["app"])
-      flash[:notice] = "Your app shall never idle. Love, Travis."
+      redirect_to '/success' if App.create(params["app"])
     else
       flash[:error] = "You supplied an unworthy URL. Make sure the URL ends in herokuapp.com."
       redirect_to '/'

@@ -5,4 +5,8 @@ class WelcomeController < ApplicationController
     @app = App.new
   end
 
+  def success
+    @url = App.last.url || "MarpDarp"
+  end
+
 end

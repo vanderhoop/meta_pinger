@@ -1,9 +1,7 @@
-%div#main-container
-  %div#content-wrapper
-    %h1 Welcome to MetaPinger
-    %p Type in your Heroku app's URL, press the Look Awesome button, and forever avoid your app's server from idling.
-    %div.form-wrapper
-      = form_for @app do |f|
-        = f.label       :url, "Project URL: "
-        = f.text_field  :url, :placeholder => "ex: lit-bayou-2858.herokuapp.com"
-        = f.submit "Look Awesome"
+%h1 Welcome to MetaPinger
+%p Type in your Heroku app's URL, press the Look Awesome button, and forever avoid your app's server from idling.
+%div.form-wrapper
+  = form_for @app do |f|
+    = f.label       :url, "Project URL: "
+    = f.text_field  :url, :placeholder => "ex: lit-bayou-2858.herokuapp.com"
+    = f.submit "Look Awesome"

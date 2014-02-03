@@ -37,17 +37,12 @@ header {
   height: 1.5em;
 }
 
-h1 {
-  font-size: 3.5em;
-}
+h1 { font-size: 3.5em; }
+h2 { font-size: 1.8em; }
+h3 { font-size: 1.4em; }
+p { text-align: center; }
 
-p {
-  text-align: center;
-}
-
-p , label{
-  font-size: 1.4em;
-}
+p , label { font-size: 1.4em; }
 
 #main-container {
   height: 100%;
@@ -60,6 +55,27 @@ p , label{
   width: 60%;
   text-align: center;
   margin-top:16%
+}
+
+///////////////////////////
+// Success Page
+///////////////////////////
+.app-wrapper {
+  height: 3em;
+  background-color: lighten($background, 20%);
+  margin: 2em auto;
+  display:table;
+}
+
+.app-wrapper h2, .app-wrapper h3, .app-wrapper h4 {
+  display:table-cell;
+  vertical-align: middle;
+  padding: 1em 2em;
+  margin: .5em;
+}
+
+h6 {
+  margin-top: 3.8em;
 }
 
 ///////////////////////////
