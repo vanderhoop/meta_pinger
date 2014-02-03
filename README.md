@@ -1,4 +1,4 @@
-meta_pinger
+MetaPinger
 ===========
 
-a Heroku app that pings other Heroku apps at 59 minute intervals to keep students' projects from idling :)
+A Heroku app that pings other Heroku apps (and itself) at 10-minute intervals to keep servers from idling.
