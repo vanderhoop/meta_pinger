@@ -36,25 +36,26 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
-
-gem "terminal-notifier-guard", :group => [:test, :development]
-gem "rspec-rails", :group => [:test, :development]
-gem "guard-rspec", :group => [:test, :development]
-gem "capybara", :group => [:test, :development]
-gem "selenium-webdriver", :group => [:test, :development]
-gem "launchy", :group => [:test, :development]
-gem "jasmine", :group => [:test, :development]
-gem "pry-rails", :group => [:test, :development]
-gem "pry-debugger", :group => [:test, :development]
-gem "pry-stack_explorer", :group => [:test, :development]
-gem "annotate", :group => [:test, :development]
-gem "quiet_assets", :group => [:test, :development]
-gem "binding_of_caller", :group => [:test, :development]
-gem "meta_request", :group => [:test, :development]
-gem "rails-erd", :group => [:test, :development]
-gem "awesome_print", :group => [:test, :development]
-gem "better_errors", :group => [:development]
-gem "simplecov", :require => false, :group => :test
 gem "haml-rails"
 gem "devise"
 gem "httparty"
+
+group :test, :development do
+  gem "terminal-notifier-guard"
+  gem "rspec-rails"
+  gem "guard-rspec"
+  gem "capybara"
+  gem "launchy"
+  gem "pry-rails"
+  gem "pry-debugger"
+  gem "pry-stack_explorer"
+  gem "annotate"
+  gem "quiet_assets"
+  gem "binding_of_caller"
+  gem "meta_request"
+  gem "rails-erd"
+  gem "awesome_print"
+end
+
+gem "better_errors", :group => [:development]
+gem "simplecov", :require => false, :group => :test
