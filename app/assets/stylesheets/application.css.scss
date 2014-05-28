@@ -19,10 +19,10 @@ $copy: #88ff00;
 $background: black;
 
 html, body {
+    background-color: $background;
     height: 100%;
     margin: 0;
     width: 100%;
-    background-color: $background;
 }
 
 body {
@@ -50,8 +50,8 @@ header p {
 h1 { font-size: 3.5em; }
 h2 { font-size: 1.8em; }
 h3 { font-size: 1.4em; }
-p { text-align: center; }
 
+p { text-align: center; }
 p , label { font-size: 1.4em; }
 
 #main-container {
@@ -62,26 +62,26 @@ p , label { font-size: 1.4em; }
 #content-wrapper {
   height: 100%;
   margin: 0 auto;
-  width: 60%;
+  margin-top:16%;
   text-align: center;
-  margin-top:16%
+  width: 60%;
 }
 
 ///////////////////////////
 // Success Page
 ///////////////////////////
 .app-wrapper {
-  height: 3em;
   background-color: lighten($background, 20%);
-  margin: 2em auto;
   display:table;
+  height: 3em;
+  margin: 2em auto;
 }
 
 .app-wrapper h2, .app-wrapper h3, .app-wrapper h4 {
   display:table-cell;
-  vertical-align: middle;
-  padding: 1em 2em;
   margin: .5em;
+  padding: 1em 2em;
+  vertical-align: middle;
 }
 
 h6 {
@@ -92,25 +92,25 @@ h6 {
 // Text Field
 ///////////////////////////
 input[type=text] {
+  border: 1px solid #DDDDDD;
+  font-size: 1em;
+  line-height: 2.2em;
+  margin: 5px 1px 3px 0px;
+  outline: none;
+  padding: 3px 0px 3px 3px;
   -webkit-transition: all 0.30s ease-in-out;
   -moz-transition: all 0.30s ease-in-out;
   -ms-transition: all 0.30s ease-in-out;
   -o-transition: all 0.30s ease-in-out;
-  outline: none;
-  padding: 3px 0px 3px 3px;
-  margin: 5px 1px 3px 0px;
-  border: 1px solid #DDDDDD;
-  line-height: 2.2em;
-  width: 30%;
   transition: width .3s ease-in-out;
-  font-size: 1em;
+  width: 30%;
 }
 
 input[type=text]:focus {
-  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-  padding: 3px 0px 3px 3px;
-  margin: 5px 1px 3px 0px;
   border: 1px solid rgba(139, 255, 0, 1);
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  margin: 5px 1px 3px 0px;
+  padding: 3px 0px 3px 3px;
 }
 
 input[type=text].activated {
@@ -120,14 +120,14 @@ input[type=text].activated {
 // Submit
 ///////////////////////////
 input[type="submit"] {
-  padding: 0.85em 1.5em;
   background-color: $copy;
   border: 0;
-  font-family:monospace;
   cursor:pointer;
-  transition: background-color .2s ease-in-out;
-  top: 0.5px;
+  font-family:monospace;
+  padding: 0.85em 1.5em;
   position: relative;
+  top: 0.5px;
+  transition: background-color .2s ease-in-out;
 }
 
 input[type="submit"]:hover {
@@ -135,8 +135,7 @@ input[type="submit"]:hover {
 }
 
 
-/* You can nest elements in SCSS, so you don't have to needlessly */
-/* repeat yourself! */
+/* You can nest elements in SCSS, so you don't have to needlessly repeat yourself! */
 header {
   h2 {
     color: $copy;
