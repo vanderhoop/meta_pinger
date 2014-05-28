@@ -6,7 +6,7 @@ class AppsController < ApplicationController
     if heroku_url
       url_tail = prepare_url_for_request(heroku_url)
       response = HTTParty.get("http://" + url_tail)
-      if response.include?("No such app")
+      if response.include?("No such app") || response.include?("page may have moved")
         flash[:error] = "ERROR: Heroku says there's no app at this location. Maybe check for typos and resubmit."
         redirect_to '/' and return
       end
