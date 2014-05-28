@@ -11,10 +11,8 @@ class AppsController < ApplicationController
         redirect_to '/' and return
       end
 
-      app = App.new(params["app"])
-      app.project_name = heroku_url[3].parameterize
+      app = App.new(url: url_tail, project_name: heroku_url[3].parameterize)
       if app.save
-        @url = app.url
         redirect_to "/success/#{app.project_name}"
       elsif app.errors.full_messages.include?("Url has already been taken")
         flash[:notice] = "Hmmm... looks like MetaPinger is already pinging this app, so rest easy."
