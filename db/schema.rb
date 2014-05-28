@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140117011413) do
+ActiveRecord::Schema.define(:version => 20140528031640) do
 
   create_table "apps", :force => true do |t|
     t.string   "url"
@@ -19,5 +19,7 @@ ActiveRecord::Schema.define(:version => 20140117011413) do
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
   end
+
+  add_index "apps", ["project_name"], :name => "index_apps_on_project_name"
 
 end
