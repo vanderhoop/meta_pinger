@@ -38,7 +38,13 @@ header {
 }
 
 header p {
-  color: #FF002B;
+  &.error {
+    color: #FF002B;
+  }
+
+  &.notice {
+    color: orange;
+  }
 }
 
 h1 { font-size: 3.5em; }
