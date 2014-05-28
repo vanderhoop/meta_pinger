@@ -7,6 +7,6 @@
 
 MetaPinger::Application.routes.draw do
   root to: 'welcome#index'
-  get '/success' => 'welcome#success'
+  get '/success/:munged_title' => 'welcome#success'
   resources :apps, :only => [:create]
 end

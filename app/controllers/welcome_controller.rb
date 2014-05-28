@@ -6,7 +6,8 @@ class WelcomeController < ApplicationController
   end
 
   def success
-    @url = App.last.url || "MarpDarp"
+    munged_title = params[:munged_title]
+    @url = App.find_by_project_name(munged_title).url
   end
 
 end
