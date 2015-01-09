@@ -19,20 +19,21 @@ $copy: #88ff00;
 $background: black;
 
 html, body {
-    background-color: $background;
-    height: 100%;
-    margin: 0;
-    width: 100%;
+  background-color: $background;
+  overflow: hidden;
+  height: 100%;
+  margin: 0;
+  width: 100%;
 }
 
 body {
-    background-color: $background;
-    color: $copy;
-    font-family: monospace;
-    font-size: 12px;
+  background-color: $background;
+  color: $copy;
+  font-family: monospace;
+  font-size: 12px;
 }
 
-// To ensure spacing of page doesn't change when flash message appears
+// ensures spacing of page doesn't change when flash message appears
 header {
   height: 1.5em;
 }
@@ -54,15 +55,15 @@ h3 { font-size: 1.4em; }
 p { text-align: center; }
 p , label { font-size: 1.4em; }
 
-#main-container {
-  height: 100%;
-  width:100%;
-}
+// #main-container {
+//   height: 100%;
+//   width:100%;
+// }
 
 #content-wrapper {
-  height: 100%;
   margin: 0 auto;
   margin-top:16%;
+  position: relative;
   text-align: center;
   width: 60%;
 }
@@ -99,17 +100,17 @@ input[type=text] {
   outline: none;
   padding: 3px 0px 3px 3px;
   -webkit-transition: all 0.30s ease-in-out;
-  -moz-transition: all 0.30s ease-in-out;
-  -ms-transition: all 0.30s ease-in-out;
-  -o-transition: all 0.30s ease-in-out;
-  transition: width .3s ease-in-out;
+     -moz-transition: all 0.30s ease-in-out;
+      -ms-transition: all 0.30s ease-in-out;
+       -o-transition: all 0.30s ease-in-out;
+          transition: all 0.30s ease-in-out;
   width: 30%;
 }
 
 input[type=text]:focus {
   border: 1px solid rgba(139, 255, 0, 1);
   box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-  margin: 5px 1px 3px 0px;
+  margin:  5px 1px 3px 0px;
   padding: 3px 0px 3px 3px;
 }
 
@@ -122,8 +123,8 @@ input[type=text].activated {
 input[type="submit"] {
   background-color: $copy;
   border: 0;
-  cursor:pointer;
-  font-family:monospace;
+  cursor: pointer;
+  font-family: monospace;
   padding: 0.85em 1.5em;
   position: relative;
   top: 0.5px;
@@ -134,10 +135,9 @@ input[type="submit"]:hover {
   background-color: darken($copy, 13%)
 }
 
-
-/* You can nest elements in SCSS, so you don't have to needlessly repeat yourself! */
-header {
-  h2 {
-    color: $copy;
-  }
+.iframe-wrapper {
+  position: relative;
+  bottom: -5em;
+  width: 20em;
+  margin: 0 auto;
 }
