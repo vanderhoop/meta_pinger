@@ -28,5 +28,5 @@ $( document ).ready(function() {
     }, 150);
   }
 
-  setTimeout(iFrameFadeIn, 500);
+  setTimeout(iFrameFadeIn, 5200);
 });
