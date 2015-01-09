@@ -19,4 +19,14 @@ $( document ).ready(function() {
   $('#app_url').on("click", function(){
     $(this).addClass("activated");
   });
+
+  function iFrameFadeIn(){
+    var $iFrames = $("iframe");
+    $iFrames.eq(0).addClass("animated fadeInUp");
+    setTimeout(function(){
+      $iFrames.eq(1).addClass("animated fadeInUp");
+    }, 150);
+  }
+
+  setTimeout(iFrameFadeIn, 500);
 });

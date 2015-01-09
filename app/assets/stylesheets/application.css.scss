@@ -143,7 +143,7 @@ input[type="submit"]:hover {
 }
 
 iframe {
-  display: none;
+  opacity: 0;
 }
 
 // keeps twitter widget's temporary link text from flashing blue on the black background before the icon loads
