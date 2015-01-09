@@ -12,3 +12,6 @@ Because idle servers can embarrass you when you're trying to show off your stude
 - Rake 
 - Heroku Scheduler
 
+===
+
+Created by [Your Friend Travis](http://yourfriendtravis.com)
