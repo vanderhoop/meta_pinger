@@ -12,9 +12,6 @@
  *= require_tree .
  */
 
-
-/* SCSS variables begin with a $, just like jQuery */
-/* the convention in SCSS variable-naming is to use dashes between words */
 $copy: #88ff00;
 $background: black;
 
@@ -33,7 +30,23 @@ body {
   font-size: 12px;
 }
 
-// ensures spacing of page doesn't change when flash message appears
+h1 { font-size: 3.5em; }
+p  { text-align: center; }
+p , label { font-size: 1.4em; }
+
+#content-wrapper {
+  margin: 0 auto;
+  margin-top:16%;
+  position: relative;
+  text-align: center;
+  width: 60%;
+}
+
+///////////////////////////
+// Flash Styles
+///////////////////////////
+
+// ensures spacing of page doesn't change when flash message appears on redirect
 header {
   height: 1.5em;
 }
@@ -48,50 +61,10 @@ header p {
   }
 }
 
-h1 { font-size: 3.5em; }
-h2 { font-size: 1.8em; }
-h3 { font-size: 1.4em; }
-
-p { text-align: center; }
-p , label { font-size: 1.4em; }
-
-// #main-container {
-//   height: 100%;
-//   width:100%;
-// }
-
-#content-wrapper {
-  margin: 0 auto;
-  margin-top:16%;
-  position: relative;
-  text-align: center;
-  width: 60%;
-}
-
 ///////////////////////////
-// Success Page
+// Form Styles
 ///////////////////////////
-.app-wrapper {
-  background-color: lighten($background, 20%);
-  display:table;
-  height: 3em;
-  margin: 2em auto;
-}
 
-.app-wrapper h2, .app-wrapper h3, .app-wrapper h4 {
-  display:table-cell;
-  margin: .5em;
-  padding: 1em 2em;
-  vertical-align: middle;
-}
-
-h6 {
-  margin-top: 3.8em;
-}
-
-///////////////////////////
-// Text Field
-///////////////////////////
 input[type=text] {
   border: 1px solid #DDDDDD;
   font-size: 1em;
@@ -114,12 +87,8 @@ input[type=text]:focus {
   padding: 3px 0px 3px 3px;
 }
 
-input[type=text].activated {
-  width: 36%;
-}
+input[type=text].activated { width: 36%; }
 
-// Submit
-///////////////////////////
 input[type="submit"] {
   background-color: $copy;
   border: 0;
@@ -133,6 +102,36 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: darken($copy, 13%)
+}
+
+///////////////////////////
+// Success Page
+///////////////////////////
+
+.app-wrapper {
+  background-color: lighten($background, 20%);
+  display:table;
+  height: 3em;
+  margin: 2em auto;
+}
+
+.app-wrapper p {
+  display:table-cell;
+  margin: .5em;
+  padding: 1em 2em;
+  vertical-align: middle;
+}
+
+.second-level {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.third-level { font-size: 1.4em; }
+
+.fourth-level {
+  font-size: 0.67em;
+  margin-top: 3.8em;
 }
 
 .iframe-wrapper {
@@ -150,3 +149,4 @@ iframe {
 a {
   color: black;
 }
+
