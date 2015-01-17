@@ -214,6 +214,7 @@ DEPENDENCIES
   capybara
   coffee-rails (~> 3.2.1)
   debugger
+  debugger-ruby_core_source
   guard-rspec
   haml-rails
   httparty
