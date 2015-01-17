@@ -26,4 +26,4 @@ group :test, :development do
 end
 
 gem "better_errors", :group => [:development]
-gem "simplecov", :require => false, :group => :test
+gem "coveralls",     :group => [:test],       require: false
