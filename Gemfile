@@ -1,15 +1,15 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.14'
-gem 'jquery-rails'
+gem "rails",             '3.2.14'
+gem "jquery-rails"
 gem "haml-rails"
 gem "httparty"
-gem 'pg'
+gem "pg"
 
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-  gem 'uglifier',     '>= 1.0.3'
+  gem "sass-rails",   "~> 3.2.3"
+  gem "coffee-rails", "~> 3.2.1"
+  gem "uglifier",     ">= 1.0.3"
 end
 
 group :test, :development do
@@ -19,7 +19,8 @@ group :test, :development do
   gem "capybara"
   gem "launchy"
   gem "pry-rails"
-  gem 'debugger'
+  gem "debugger"
+  gem "debugger-ruby_core_source" # for Travis CI
   gem "pry-debugger"
   gem "quiet_assets"
   gem "binding_of_caller"
