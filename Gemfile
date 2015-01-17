@@ -19,9 +19,6 @@ group :test, :development do
   gem "capybara"
   gem "launchy"
   gem "pry-rails"
-  gem "debugger"
-  gem "debugger-ruby_core_source" # for Travis CI
-  gem "pry-debugger"
   gem "quiet_assets"
   gem "binding_of_caller"
   gem "meta_request"
