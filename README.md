@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/vanderhoop/meta_pinger.svg?branch=master)](https://travis-ci.org/vanderhoop/meta_pinger)
 [![Coverage Status](https://coveralls.io/repos/vanderhoop/meta_pinger/badge.svg?branch=master)](https://coveralls.io/r/vanderhoop/meta_pinger?branch=master)
+[![Code Climate](https://codeclimate.com/github/vanderhoop/meta_pinger/badges/gpa.svg)](https://codeclimate.com/github/vanderhoop/meta_pinger)
 
 ## MetaPinger
 
