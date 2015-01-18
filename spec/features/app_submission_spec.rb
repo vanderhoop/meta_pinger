@@ -14,13 +14,20 @@ describe "the app submission process" do
     end
 
     it("the user is notified of their error") do
-      expect(page).to have_text("seems you supplied an unworthy URL")
+      expect(page).to have_text("seems you supplied an unworthy URL.")
     end
   end # context
 
   context "when the user submits a URL that contains '.herokuapp.com'" do
     before(:each) do
       submit_app("appy.herokuapp.com")
+    end
+
+    context "when the user submits a heroku URL that doesn't have an associated app" do
+      it "the user is notified of the non-existence of the submitted app" do
+        submit_app("http://a9mbtacotruck023mania41could.herokuapp.com")
+        expect(page).to have_text("Heroku says there's no app at this location")
+      end
     end
 
     context "when the submitted app hasn't been added to metapinger previusly" do

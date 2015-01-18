@@ -15,7 +15,6 @@ end
 group :test, :development do
   gem "terminal-notifier-guard"
   gem "rspec-rails"
-  gem "guard-rspec"
   gem "launchy"
   gem "capybara"
   gem "pry-rails"
@@ -25,6 +24,7 @@ group :test, :development do
   gem "awesome_print"
 end
 
+gem "guard-rspec",        :group => [:development]
 gem "better_errors",      :group => [:development]
 gem "shoulda-matchers",   :group => [:test]
 gem "coveralls",          :group => [:test],       require: false
