@@ -17,6 +17,7 @@ group :test, :development do
   gem "rspec-rails"
   gem "guard-rspec"
   gem "launchy"
+  gem "capybara"
   gem "pry-rails"
   gem "quiet_assets"
   gem "binding_of_caller"
