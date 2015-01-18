@@ -24,6 +24,7 @@ group :test, :development do
   gem "awesome_print"
   gem "shoulda-matchers"
   gem "guard-rspec"
+  gem "selenium-webdriver"
 end
 
 gem "better_errors",      :group => [:development]
