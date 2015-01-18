@@ -4,7 +4,7 @@
 
 ## MetaPinger
 
-[MetaPinger](http://metapinger.herokuapp.com/) is a simple, one-model Heroku app that pings other Heroku apps (and itself) at 10-minute intervals to keep the service's free servers from idling.
+[MetaPinger](http://metapinger.herokuapp.com/) is a Heroku app that pings Heroku apps (including itself) at 10-minute intervals to keep the service's free servers from idling.
 
 Visit [the live app and keep your passion projects forever humming](http://metapinger.herokuapp.com/).
 
