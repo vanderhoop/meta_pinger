@@ -6,7 +6,7 @@
 
 [MetaPinger](http://metapinger.herokuapp.com/) is a simple, one-model Heroku app that pings other Heroku apps (and itself) at 10-minute intervals to keep the service's free servers from idling.
 
-[Visit MetaPinger](http://metapinger.herokuapp.com/)
+Visit [the live app and keep your passion projects forever humming](http://metapinger.herokuapp.com/).
 
 #### Why?
 Because idle servers can embarrass you when you're trying to show off your student apps in front of potential employers, and you don't want to be embarrassed in front of potential employers.
