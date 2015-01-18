@@ -22,9 +22,9 @@ group :test, :development do
   gem "binding_of_caller"
   gem "meta_request"
   gem "awesome_print"
+  gem "shoulda-matchers"
+  gem "guard-rspec"
 end
 
-gem "guard-rspec",        :group => [:development]
 gem "better_errors",      :group => [:development]
-gem "shoulda-matchers",   :group => [:test]
 gem "coveralls",          :group => [:test],       require: false

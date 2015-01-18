@@ -10,7 +10,7 @@ describe "the app submission process" do
 
   context "when the user submits a URL that doesn't contain '.herokuapp.com'" do
     before(:each) do
-      submit_app("http://blarptydarp.marp.com")
+      submit_app("http://blarptydarp.com")
     end
 
     it("the user is notified of their error") do
