@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/vanderhoop/meta_pinger.svg?branch=master)](https://travis-ci.org/vanderhoop/meta_pinger)
+[![Coverage Status](https://coveralls.io/repos/vanderhoop/meta_pinger/badge.svg?branch=master)](https://coveralls.io/r/vanderhoop/meta_pinger?branch=master)
+
 ## MetaPinger
 
 [MetaPinger](http://metapinger.herokuapp.com/) is a simple, one-model Heroku app that pings other Heroku apps (and itself) at 10-minute intervals to keep the service's free servers from idling.
