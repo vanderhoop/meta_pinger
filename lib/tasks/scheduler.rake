@@ -4,7 +4,7 @@ task :ping_apps => :environment do
   App.all.each do |app|
     begin
       response = HTTParty.get(app.url)
-    rescue SocketError => e
+    rescue Exception => e
       puts "#{app.url} went bust:"
       puts e
     end
