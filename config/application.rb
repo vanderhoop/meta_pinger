@@ -41,21 +41,6 @@ module MetaPinger
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
 
-    config.after_initialize do
-
-      # def ping_apps
-      #   binding.pry
-      #   App.all.each do |app|
-      #     url = app.url
-      #     response = HTTParty.get(url)
-      #   end
-      #     sleep(10.seconds)
-      #     ping_apps
-      # end
-
-      # ping_apps
-    end
-
     config.assets.initialize_on_precompile = false
 
     # Configure sensitive parameters which will be filtered from the log file.
