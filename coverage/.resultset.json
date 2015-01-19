@@ -6,15 +6,6 @@
         1,
         null,
         null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
         1
       ],
       "/Users/vanderhoop/dev/projects/meta_pinger/config/application.rb": [
@@ -60,21 +51,6 @@
         null,
         null,
         1,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
         null,
         1,
         null,
@@ -272,11 +248,14 @@
         null,
         1,
         8,
+        0,
+        null,
+        8,
         8,
         3,
-        3,
         null,
-        5,
+        8,
+        null,
         null,
         null,
         null,
@@ -371,6 +350,6 @@
         null
       ]
     },
-    "timestamp": 1421685447
+    "timestamp": 1421687704
   }
 }

@@ -15,12 +15,15 @@ class App < ActiveRecord::Base
   end
 
   def exists?
-    response = HTTParty.get(self.url)
-    if response.include?("No such app") || response.include?("page may have moved")
-      errors.add(:url_invalid, "ERROR: Heroku says there's no app at this location. Maybe check for typos and resubmit.")
-      return false
+    if self.url.include?("metapinger.herokuapp.com")
+      errors.add(:url_invalid, "Clever, clever!")
+    else
+      response = HTTParty.get(self.url)
+      if response.include?("No such app") || response.include?("page may have moved")
+        errors.add(:url_invalid, "ERROR: Heroku says there's no app at this location. Maybe check for typos and resubmit.")
+      end
+      errors.messages.empty?
     end
-    true
   end
 
 end
