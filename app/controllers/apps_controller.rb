@@ -15,7 +15,7 @@ class AppsController < ApplicationController
     #   end
 
     # app = App.new(url: params["app"]["url"], project_name: heroku_url_match_object[3].parameterize)
-    app = App.new(url: params["app"]["url"], project_name: "marp")
+    app = App.new(url: params["app"]["url"])
     if app.save
       redirect_to "/success/#{app.project_name}"
     elsif app.errors.full_messages.include?("Url has already been taken")
