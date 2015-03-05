@@ -3,6 +3,7 @@ class App < ActiveRecord::Base
   validates         :url, :project_name, { :uniqueness => true, :presence => true }
 
   after_initialize  :format_attributes
+  after_save        :alert_admin
 
   def format_attributes
     match = /^(https?:\/\/)?(w{3}\.)?(\S+)(\.herokuapp\.com)\/?$/i.match(self.url)
@@ -24,6 +25,10 @@ class App < ActiveRecord::Base
       end
       errors.messages.empty?
     end
+  end
+
+  def alert_admin
+    AppMailer.alert_admin(self).deliver
   end
 
 end
