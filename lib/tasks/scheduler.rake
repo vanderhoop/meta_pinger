@@ -7,9 +7,9 @@ task :ping_apps => :environment do
     App.find_each do |app|
       begin
         response = HTTParty.get(app.url)
+        puts "Pinging #{app.url}"
       rescue Exception => e
-        puts "#{app.url} went bust:"
-        puts e
+        puts "#{app.url} went bust:\n\t#{e.message}"
       end
     end
     puts "Finished pinging."
