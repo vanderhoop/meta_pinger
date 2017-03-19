@@ -1,3 +1,5 @@
 *.erb linguist-language=Ruby
 *.haml linguist-language=Ruby
 public/* linguist-vendored
+coverage/* linguist-vendored
+coverage/assets/* linguist-vendored
