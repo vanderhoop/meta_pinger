@@ -1,0 +1,3 @@
+*.erb linguist-language=Ruby
+*.haml linguist-language=Ruby
+public/* linguist-vendored
